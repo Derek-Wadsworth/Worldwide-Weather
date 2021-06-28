@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name="description" content="Website for viewing weather around the world">
+    <title>Worldwide Weather</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="index.css"/>
+    <!--Link datetime js script here-->
+</head>
+<body>
+    <div class="main">
+        <!-- background video-->
+        <video autoplay loop muted id="clouds"> 
+            <source src="../photos/clouds.mp4" type="video/mp4">
+        </video>
+        <!--title and searchbar-->
+        <div class="main-content">
+            <div class="title-box">
+                <img src="../photos/sun-clouds.png"> 
+                <h1>WORLDWIDE WEATHER</h1>
+            </div>
+            <div class="container form-box">
+                <div class="row bg-box">
+                    <!--location form-->
+                    <div class="col-12 col-lg-5" id="location-form-container">
+                        <div class="input-group form-field">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="location-icon-container">
+                                    <i class="bi bi-geo-alt-fill"></i>
+                                </span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="Find Location"> 
+                        </div>
+                    </div>
+                    <!--date form-->
+                    <div class="col-12 col-lg-5" id="date-form-container">
+                        <div class="input-group form-field">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="calendar-icon-container">
+                                    <i class="bi bi-calendar-week"></i>
+                                </span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="Date">
+                        </div>
+                    </div>
+                    <!--form submit button-->
+                    <div class="col-12 col-lg-2 form-submit">
+                        <button type="button" class="btn btn-primary submit-button">Search</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--bootstrap CDN packages-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
